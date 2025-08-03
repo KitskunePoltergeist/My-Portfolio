@@ -1,44 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Fira+Code:wght@300..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css" />
-    <script src="script.js" defer></script>
-  <body>
-  <h1 class="gradient-text">Welcome to my Portfolio!</h1>
- <p> hi</p>
-  <form class="color-picker">
-    <fieldset>
-      <select name="theme" id="theme">
-        <option value="💻">System</option>
-        <option value="☀️">Light</option>
-        <option value="🌑">Dark</option>
-      </select>
-    </fieldset>
-  </form>
 
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <div id="portfolio"></div>
+  <h1 id="gradient-text">Welcome to my Portfolio!</h1>
   <main>
     <div class="wrapper">
       <h1>Theme transitions</h1>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati natus error quam suscipit architecto.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati natus error quam suscipit architecto.</p>
       <h2>Something interesting</h2>
-      <div class="auto-grid">
-        <div class="card"><h3 class="card__title">A medium-length title</h3><p>Lorem ipsum dolor sit amet.</p></div>
-        <div class="card"><h3 class="card__title">A short title</h3><p>Voluptatem excepturi tempore quo.</p></div>
-        <div class="card"><h3 class="card__title">Another medium title</h3><p>Nam laudantium voluptas tenetur.</p></div>
-        <div class="card"><h3 class="card__title">A much longer title than others</h3><p>Lorem ipsum dolor sit amet.</p></div>
-        <div class="card"><h3 class="card__title">Medium again</h3><p>Voluptatem excepturi tempore quo.</p></div>
-        <div class="card"><h3 class="card__title">A short title</h3><p>Nam laudantium voluptas tenetur.</p></div>
+      <div class="card-container">
+        <div class="card" data-color="hot-pink">
+          <h1> Coding </h1>
+          <p class="card-text"> I code a lot in my free time, and I know <code>HTML</code>, <code>CSS</code>, <code>JavaScript</code>, and <code>Python</code>. </p>
+        </div>
+        <div class="card" data-color="teal">
+          <h1> A medium-length title </h1>
+          <div class="grid-container">
+              <a href="#gradient-text">link </a>L
+              orem ipsum dolor sit amet.
+            </p>
+          </div>
+        </div>
       </div>
-    </div>
+
+
+
+
+      <div class="button-container"> <button class="fancy-button">Click me!</button> </div>
   </main>
-  </body>
+  <footer><a href="#portfolio">Go back up?</a></footer>
+</body>
+
 </html>
